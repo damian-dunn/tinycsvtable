@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+  <style>
+		
+    table {
+      border-collapse: collapse;
+      border-radius: 5px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 0 auto;
+    }
+    
+    th {
+      background: #009578;
+      color: #ffffff;
+      text-align: left;
+    }
+    
+    th,
+    td {
+      padding: 10px 20px;
+    }
+    
+    tr:nth-child(even) {
+      background: #eeeeee;
+    }
+    
+    </style>
+    
+</head>
+	
+<body>
+  <div style="text-align:center;">
+  <input type="file" id="csvFileInput" style="padding-bottom: 15px">
+</div>
+<br>
+  <table id="csvRoot"></table>
+		
+<script type="module" src="./js/main.js"></script>
+<script src="./lib/papaparse.min.js"></script>
+</body>
